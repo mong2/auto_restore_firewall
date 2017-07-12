@@ -1,5 +1,4 @@
 import cloudpassage
-from lib.sanity import SanityCheck
 from lib.api_session import ApiSession
 
 
