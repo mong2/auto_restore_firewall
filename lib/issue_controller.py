@@ -1,5 +1,4 @@
 import cloudpassage
-import lib
 from lib.api_session import ApiSession
 
 
