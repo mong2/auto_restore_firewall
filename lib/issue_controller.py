@@ -1,4 +1,5 @@
 import cloudpassage
+import sys
 from lib.api_session import ApiSession
 
 
@@ -14,4 +15,5 @@ class IssueController(ApiSession):
                 raise TypeError
         except TypeError:
             result = self.issue_obj.list_all(**kwargs)
+        sys.stdout.write("%s server(s) need auto-restore firewall policy." % len(result))
         return result
